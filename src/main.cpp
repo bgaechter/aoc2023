@@ -1,4 +1,5 @@
 #include "day01.h"
+#include "day02.h"
 #include <cctype>
 #include <cstdlib>
 #include <fstream>
@@ -22,6 +23,8 @@ int main(int argc, char *argv[])
   if (day == "01")
   {
     solve_day01(infile);
+  } else if (day == "02") {
+    solve_day02(infile);
   }
   else
   {

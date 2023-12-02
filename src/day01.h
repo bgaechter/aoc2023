@@ -1,3 +1,4 @@
+#pragma once
 #include <cctype>
 #include <cstdlib>
 #include <fstream>
