@@ -65,7 +65,6 @@ void solve_day06(std::ifstream &infile) {
 	std::thread threads[max_threads];
 	std::cout << "Launching " << max_threads << " threads" << std::endl;
 	for (int i = 0; i < max_threads; ++i) {
-
 		int start = i * range_size;
 		int end = (i == max_threads - 1) ? time_p2 : start + range_size;
 		std::cout << " starting thread with range " << start << " " << end << std::endl;
