@@ -7,6 +7,8 @@
 #include "day07.h"
 #include "day07b.h"
 #include "day08.h"
+#include "day09.h"
+#include "day10.h"
 #include <filesystem>
 #include <fstream>
 #include <iostream>
@@ -35,10 +37,14 @@ int main(int argc, char *argv[]) {
 		solve_day06(infile);
 	} else if (day == "07") {
 		solve_day07(infile);
-        solve_day07b(infile);
+		solve_day07b(infile);
 	} else if (day == "08") {
 		solve_day08(infile);
-	} else {
+	} else if (day == "09") {
+		solve_day09(infile);
+	} else if (day == "10") {
+		solve_day10(infile);
+	}  else {
 		std::cout << "No such day " << day << std::endl;
 		return -1;
 	}
